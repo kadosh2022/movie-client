@@ -29,7 +29,7 @@ function Register() {
         }
         setBtnDisabled(true);
         const payload = { email, password, username };
-        const liveurl = `https://movies-dev.herokuapp.com/api/users/auth`;
+        const liveurl = `https://movies-dev.herokuapp.com/api/users/`;
 
         axios.post(liveurl, payload)
             .then(function (response) {

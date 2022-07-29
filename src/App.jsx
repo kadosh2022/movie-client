@@ -8,12 +8,19 @@ import Login from './pages/Auth/Login/Login';
 import MovieDetail from './pages/MovieDetail';
 import Comment from './pages/MovieDetail/Comment';
 import NewMovie from './pages/NewMovie';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem('token') ? true : false;
   });
+
+  useEffect(
+    function() {
+      setIsLoggedIn(localStorage.getItem('token') ? true : false);
+    },
+    []
+  )
 
   console.log({isLoggedIn})
 
