@@ -1,0 +1,75 @@
+.movie-container {
+  background: linear-gradient(
+      231.73deg,
+      #000000 19.41%,
+      rgba(0, 0, 0, 0.85) 65.43%,
+      #000000 87.9%,
+      rgba(0, 0, 0, 0) 107.83%
+    )
+    no-repeat;
+  height: 1300px;
+  overflow: auto;
+}
+
+.movie-items,
+.movie-none {
+  position: absolute;
+  top: 170px;
+}
+
+.movie-items {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 270px);
+  grid-gap: 22px;
+  justify-content: space-evenly;
+  border-radius: 5px solid white;
+}
+
+.movie-search-area {
+  position: absolute;
+  left: 500px;
+  top: 75px;
+}
+
+.movie-search-area > .search-input {
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 19px;
+  padding: 0 80px;
+  color: #ffffff;
+}
+
+.movie-search-area > .search-button {
+  background: url("../../../assets/search.svg") no-repeat center;
+  background-size: 30px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 40px;
+  position: absolute;
+  left: 327px;
+}
+
+.movies-none {
+  position: absolute;
+  top: 100px;
+}
+
+.movies-create {
+  top: 520px;
+  background: #a90909;
+  width: 170px;
+  height: 53px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}

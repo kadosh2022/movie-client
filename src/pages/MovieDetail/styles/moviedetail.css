@@ -1,0 +1,184 @@
+.main {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  left: 10px;
+  top: 50px;
+  width: 1300px;
+  height: 600px;
+  margin: 5px 20px;
+  overflow: hidden;
+}
+
+.movie-frame,
+.movie-detail {
+  width: 50%;
+}
+
+.movie-frame > .frame-img {
+  border-radius: 30px;
+  margin: 20px;
+  height: 90%;
+}
+
+.movie-frame > .frame-img > img {
+ width: 100%;
+ z-index: -1;
+ height: 100%;
+ border-radius: 10px
+}
+
+.frame-btn {
+  position: absolute;
+  top: 480px;
+  left: 460px;
+  padding: 5px 25px;
+  background: #a90909;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  color: white;
+  height: 40px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.frame-genre {
+  position: absolute;
+  top: 450px;
+  left: 50px;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  color: #0feffd;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 80px;
+  height: 24px;
+  background: rgba(29, 29, 29, 0.5);
+  border-radius: 0px 8px;
+}
+.frame-title {
+  position: absolute;
+  text-transform: uppercase;
+  top: 490px;
+  left: 50px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.detail-info {
+  display: grid;
+  width: 600px;
+  height: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 150px 50px 50px 50px 50px;
+  grid-template-areas:
+    "title rating"
+    "description description"
+    "field1 value1"
+    "field2 value2"
+    "field3 value3"
+    "field4 value4"
+    "comments .";
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+.detail-info > .title,
+.detail-info > .rating,
+.detail-info > .description,
+.detail-info > .field1,
+.detail-info > .value1,
+.detail-info > .field2,
+.detail-info > .value2,
+.detail-info > .field3,
+.detail-info > .value3,
+.detail-info > .field4,
+.detail-info > .value4,
+.detail-info > .comments {
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.detail-info > .title {
+  grid-area: title;
+  width: 300px;
+}
+.detail-info > .rating {
+  grid-area: rating;
+  width: 300px;
+}
+.detail-info > .description {
+  grid-area: description;
+  height: 100%;
+  text-align: justify;
+}
+.detail-info > .field1 {
+  grid-area: field1;
+  text-transform: uppercase;
+}
+.detail-info > .value1 {
+  grid-area: value1;
+}
+.detail-info > .field2 {
+  text-transform: uppercase;
+  grid-area: field2;
+}
+.detail-info > .value2 {
+  grid-area: value2;
+}
+.detail-info > .field3 {
+  text-transform: uppercase;
+  grid-area: field3;
+}
+.detail-info > .value3 {
+  grid-area: value3;
+}
+.detail-info > .field4 {
+  text-transform: uppercase;
+  grid-area: field4;
+}
+.detail-info > .value4 {
+  grid-area: value4;
+}
+.detail-info > .comments {
+  grid-area: comments;
+  background: #d7d7d7;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+  text-transform: capitalize;
+  width: 230px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.comments-arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -70px;
+  left: 170px;
+  background: #a90909;
+  box-shadow: 0px 4px 24px rgba(79, 70, 186, 0.4);
+  border-radius: 10px;
+}
+
+.comments-arrow > .arrow-right {
+  background: url("../../../assets/rightarrow.svg") no-repeat center;
+  width: 11px;
+  height: 17px;
+  position: absolute;
+  top: 16px;
+  left: 19px;
+}

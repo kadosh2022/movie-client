@@ -1,0 +1,11 @@
+.auth-container {
+  position: absolute;
+  font-family: "Poppins";
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: lighter;
+  top: 84px;
+  left: -85px;
+  margin: 0 600px;
+  text-align: center;
+}

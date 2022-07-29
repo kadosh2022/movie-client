@@ -1,0 +1,102 @@
+.myNav {
+  height: 55px;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+}
+
+.myNav > .left {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.myNav > .logo {
+  font-family: Oswald, san-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  width: 35%;
+  margin-left: 70px;
+  text-transform: uppercase;
+}
+
+.myNav > .logo > span {
+  color: #a90909;
+}
+
+.myNav > .left > li {
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.myNav > .left > li:nth-of-type(2),
+.myNav > .left > li:nth-of-type(3) {
+  margin-left: 70px;
+}
+
+.myNav > .left > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.myNav > .left > li > a:hover {
+  border-bottom: 5px solid #a90909;
+}
+
+.myNav > .right {
+  width: 20%;
+  display: flex;
+  font-weight: 600;
+  font-size: 17px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.myNav > .right > li {
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0 4px;
+}
+
+.myNav > .right .login {
+  border: 1px solid #ffffff;
+  padding: 6px 20px;
+  border-radius: 5px;
+}
+
+.logout {
+  border: 1px solid #ffffff;
+  padding: 6px 20px;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 17px;
+  margin-left: 100px;
+}
+
+.myNav > .right .register {
+  background: #a90909;
+  padding: 6px 20px;
+  border-radius: 5px;
+}
+
+.myNav > .right > li > a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,41 @@
+.home-container {
+  background: url("../../../assets/Wallpaper.svg") no-repeat center;
+  background-size: 1600px 1700px;
+  height: 100vh;
+}
+
+.logo-movie {
+  position: absolute;
+  background: url("../../../assets/LogoMovie.svg") no-repeat center;
+  background-size: 339px 471px;
+  left: 54px;
+  top: 150px;
+  width: 339px;
+  height: 471px;
+}
+
+.home-btn {
+  position: absolute;
+  width: 200px;
+  height: 53px;
+  color: white;
+  left: 50px;
+  top: 520px;
+  background: #a90909;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.play {
+  line-height: 33px;
+  position: inherit;
+  left: 15px;
+  top: 11px;
+}

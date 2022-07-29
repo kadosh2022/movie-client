@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  /* width: 100vw; */
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: linear-gradient(
+      231.73deg,
+      #000000 19.41%,
+      rgba(0, 0, 0, 0.85) 65.43%,
+      #000000 87.9%,
+      rgba(0, 0, 0, 0) 107.83%
+    )
+    no-repeat;
+}

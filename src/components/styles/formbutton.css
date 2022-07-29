@@ -1,0 +1,24 @@
+.form-btn {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  top: 50px;
+  background: #a90909;
+  border: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  height: 45px;
+  width: 370px;
+  margin: 15px 0;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+.form-btn:disabled {
+  background: gray;
+  color: #a90909;
+}
