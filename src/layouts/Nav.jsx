@@ -2,7 +2,8 @@
 import { Link } from 'react-router-dom';
 import './styles/nav.css';
 
-function Nav( {isLoggedIn, onLogout}) {
+function Nav( {isLoggedIn, onLogout, setIsLoggedIn}) {
+
     return <>
         <nav className='myNav'>
             <ul className='left'>

@@ -3,7 +3,7 @@ import playIcon from '../../assets/play.svg';
 import {useNavigate} from "react-router-dom"
 
 
-function Home() {
+function Home({isLoggedIn}) {
     const navigate = useNavigate();
     return <>
         <div className="home-container">
@@ -13,7 +13,7 @@ function Home() {
             <button 
                 className="home-btn" 
                 onClick={() => {
-                    navigate('/accounts/login')
+                    isLoggedIn ? navigate('/new') : navigate('/accounts/login')
                 }}
             >
                 <img className="play" src={playIcon} alt="play_icon"/>

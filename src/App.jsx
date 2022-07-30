@@ -31,12 +31,12 @@ function App() {
 
   return (
     <div>
-      <Nav isLoggedIn={isLoggedIn} onLogout={logout} />
+      <Nav isLoggedIn={isLoggedIn} onLogout={logout} setIsLoggedIn={setIsLoggedIn}/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
         <Route path="/accounts" element={<Auth />} >
           <Route path='register' element={<Register />} />
-          <Route path='login' element={<Login />} />
+          <Route path='login' element={<Login setIsLoggedIn={setIsLoggedIn}/>} />
         </Route>
         <Route path="/movies" element={<Movies />} />
         <Route path="/movie/:slug" element={<MovieDetail />} />

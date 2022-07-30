@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
-function Login() {
+function Login({setIsLoggedIn}) {
     const navigate = useNavigate();
 
     const [email, setEmail] = useState('');
@@ -42,6 +42,7 @@ function Login() {
                 setPassword('');
                 alert(message);
                 localStorage.setItem("token", data);
+                setIsLoggedIn(true);
                 navigate('/movies');
             })
             .catch(function (error) {
