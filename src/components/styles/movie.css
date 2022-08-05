@@ -4,6 +4,7 @@
   list-style-type: none;
   background: transparent;
   padding: 5px;
+  cursor: pointer;
 }
 
 .movie-title {

@@ -44,7 +44,7 @@ function Index() {
                     setFetchSuccess(true);
             }
         },
-        [fetchSuccess]
+        []
     )
     const moviesToDisplay = movies.map(function (movie) {
         return <Movie movie={movie} key={movie._id} />

@@ -15,28 +15,14 @@ function NewMovie() {
     const [btnDisabled, setBtnDisabled] = useState(false)
 
 
-    // function handlePhotoChange(event) {
-    //     const [photoToUpload] = event.target.files;
-    //     console.log({ photoToUpload });
+    function handlePhotoChange(photoObj) {
+        // const [photoToUpload] = event.target.files;
+        console.log({ photoObj });
+        console.log('here');
+        alert('please wait for image upload confirmation before submitting form');
 
-
-
-    // }
-
-    function createMovie(event) {
-        event.preventDefault();
-        if (!photo.trim()) {
-            alert("image is required")
-            return;
-        }
-        if (!name.trim() || !description.trim() || !releaseDate.trim() || !ticketPrice.trim() || !genre.trim() || !rating) {
-            alert('Please fill out all fields');
-            return;
-        }
-
-        setBtnDisabled(true)
         const formData = new FormData();
-        formData.append('file', photo);
+        formData.append('file', photoObj);
         formData.append('upload_preset', 'movies-upload');
 
         const img_options = {
@@ -62,6 +48,23 @@ function NewMovie() {
                 alert('error uploading file,  please try again');
                 return;
             })
+
+    }
+
+    function createMovie(event) {
+        event.preventDefault();
+        // if (!photo.trim()) {
+        //     alert("image is required")
+        //     return;
+        // }
+        if (!name.trim() || !description.trim() || !releaseDate.trim() || !ticketPrice.trim() || !genre.trim() || !rating) {
+            alert('Please fill out all fields');
+            return;
+        }
+
+        setBtnDisabled(true)
+        
+            console.log({photo})
 
         const payload = {
             name,
@@ -149,7 +152,7 @@ function NewMovie() {
                 <input
                     type='file'
                     className='photo'
-                    onChange={(e) => { setPhoto(e.target.files[0]) }}
+                    onChange={(e) => { handlePhotoChange(e.target.files[0]) }}
                 />
                 <button className='newmovie-btn' disabled={btnDisabled}>create</button>
             </form>
